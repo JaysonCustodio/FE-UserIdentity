@@ -1,74 +1,35 @@
-User Identity Management - Frontend
+# User Identity
+
 This is the Angular frontend application for managing user identity details. It connects to a backend API to fetch, display, and update user information using reactive forms and HTTP services.
 
-Features
-Display user details in a clean UI
+---
 
-Edit and update user information with validation
+## Features
 
-Loading spinner during API calls
+- Retrieve user identity by ID (`GET`)
+- Update user identity fields (`PATCH`)
+- Uses Angular Reactive Forms and HttpClient
+- Automatically updates `LastUpdated` timestamp
+- Inline error messages for form validation
+- Tailwind CSS for styling
 
-Inline error messages for form validation
+---
 
-Uses Angular Reactive Forms and HttpClient
+## Quick Start
 
-Tailwind CSS for styling
+### 1. Clone or Download : https://github.com/JaysonCustodio/FE-UserIdentity.git
+### 2. npm install
+### 3. ng serve
 
-Technologies Used
-Angular 16+
-
-RxJS
-
-Tailwind CSS
-
-TypeScript
-
-Getting Started
-Prerequisites
-Node.js (v16+ recommended)
-
-npm or yarn
-
-Angular CLI (npm install -g @angular/cli)
-
-Installation
-Clone the repo or download the frontend folder.
-
-Navigate to the project directory in the terminal.
-
-Install dependencies:
-
-bash
-npm install
-Running the Application
-Start the Angular development server:
-
-bash
-ng serve
-Open your browser and go to:
-
-Edit
-http://localhost:4200
-The app will automatically reload if you change any source files.
+```bash
+git clone https://github.com/JaysonCustodio/FE-UserIdentity.git
+cd FE-UserIdentity
 
 Project Structure
+
+FE-UserIdentity
 src/
  └── app/
-      ├── user/          # User component, service, and types
-      ├── services/      # General services (if any)
-      └── app.module.ts  # Angular module imports
-
-
-Configuration
-Update the API endpoint URL in user.service.ts if your backend URL differs.
-
-Usage
-The app fetches user data on load.
-
-Edit user details using the form.
-
-Save changes to update user info via the API.
-
-Inline validation prevents submitting invalid data.
-
-Displays loading indicators and error messages.
+      ├── user/         
+      ├── services/     
+      └── app.module.ts  
