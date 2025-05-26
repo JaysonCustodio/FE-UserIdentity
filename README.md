@@ -1,60 +1,74 @@
-# Frontend
+User Identity Management - Frontend
+This is the Angular frontend application for managing user identity details. It connects to a backend API to fetch, display, and update user information using reactive forms and HTTP services.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+Features
+Display user details in a clean UI
 
-## Development server
+Edit and update user information with validation
 
-To start a local development server, run:
+Loading spinner during API calls
 
-```bash
+Inline error messages for form validation
+
+Uses Angular Reactive Forms and HttpClient
+
+Tailwind CSS for styling
+
+Technologies Used
+Angular 16+
+
+RxJS
+
+Tailwind CSS
+
+TypeScript
+
+Getting Started
+Prerequisites
+Node.js (v16+ recommended)
+
+npm or yarn
+
+Angular CLI (npm install -g @angular/cli)
+
+Installation
+Clone the repo or download the frontend folder.
+
+Navigate to the project directory in the terminal.
+
+Install dependencies:
+
+bash
+npm install
+Running the Application
+Start the Angular development server:
+
+bash
 ng serve
-```
+Open your browser and go to:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Edit
+http://localhost:4200
+The app will automatically reload if you change any source files.
 
-## Code scaffolding
+Project Structure
+src/
+ └── app/
+      ├── user/          # User component, service, and types
+      ├── services/      # General services (if any)
+      └── app.module.ts  # Angular module imports
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+Configuration
+Update the API endpoint URL in user.service.ts if your backend URL differs.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Usage
+The app fetches user data on load.
 
-```bash
-ng generate --help
-```
+Edit user details using the form.
 
-## Building
+Save changes to update user info via the API.
 
-To build the project run:
+Inline validation prevents submitting invalid data.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# FE-UserIdentity
+Displays loading indicators and error messages.
